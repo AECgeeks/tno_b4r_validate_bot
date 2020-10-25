@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>B4R Shacl BIM Bot</title>
+    </head>
+    <body>
+    
+        <h2>Upload file for validation</h2>
+        
+        <form method='POST' action='/' enctype="multipart/form-data">
+            <input type="file" name="file" id="file">
+            <input type="submit" value="Upload File" name="submit">
+        </form>
+        
+        <h3>Shacl content</h3>
+        
+        <pre>{{ shacl_content }}</pre>
+        
+        <h3>Results</h3>
+        
+        {% if url %}
+        
+        <a download='result.bcfzip' href='{{ url }}'>Download as BCF</a><br />
+        
+        {% endif %}
+        
+        {{ result|safe }}
+        
+    </body>
+</html>

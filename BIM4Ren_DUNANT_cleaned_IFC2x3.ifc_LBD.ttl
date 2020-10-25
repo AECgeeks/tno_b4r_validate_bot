@@ -1,0 +1,1146 @@
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix unit:  <http://qudt.org/vocab/unit/> .
+@prefix IFC4-PSD: <https://www.linkedbuildingdata.net/IFC4-PSD#> .
+@prefix smls:  <https://w3id.org/def/smls-owl#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix bot:   <https://w3id.org/bot#> .
+@prefix inst:  <https://dot.dc.rwth-aachen.de/IFCtoLBDset#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix beo:   <https://pi.pauwel.be/voc/buildingelement#> .
+@prefix props: <http://lbd.arch.rwth-aachen.de/props#> .
+
+inst:window_c39bc8c5-ee04-426b-9242-23858206a05b
+        a                             bot:Element , beo:Window ;
+        props:batid                   "216195" ;
+        props:categorie               [ rdf:value
+                          "Fenêtres" ] ;
+        props:encadrementInterieur    [ rdf:value
+                          false ] ;
+        props:famille                 [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:familleEtType           [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:globalIdIfcRoot         "33cyZ5xWH2Qv928uM21g1R" ;
+        props:hauteurDeLappui         [ rdf:value  "50."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:hauteurSousLinteau      [ rdf:value  "2450."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:iDDuType                [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:iDHote                  [ rdf:value
+                          "Mur de base: Générique  - 300 mm" ] ;
+        props:identifiant             [ rdf:value
+                          "13" ] ;
+        props:isExternal              [ rdf:value     true ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pcd1b6c00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:nameIfcRoot             "1 Vantail - Imposte haute:1.20m x 2.40m:216195" ;
+        props:niveau                  [ rdf:value
+                          "Niveau: Niveau 1" ] ;
+        props:objectTypeIfcObject     "1.20m x 2.40m" ;
+        props:overallHeightIfcWindow  [ rdf:value  "2529.99999999999"^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:overallWidthIfcWindow   [ rdf:value  "1300."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:phaseDeCreation         [ rdf:value
+                          "Nouvelle construction" ] ;
+        props:reference               [ rdf:value     "1.20m x 2.40m" ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pa6f5cc00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:surface                 [ rdf:value  "5.24827452765166"^^xsd:double ;
+                                        smls:unit  unit:M2
+                                      ] ;
+        props:thermalTransmittance    [ rdf:value     "5.5617"^^xsd:double ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pd86e9780d21811e1800000215ad4efdf>
+                                      ] ;
+        props:type                    [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:volume                  [ rdf:value  "0.0731671300418311"^^xsd:double ;
+                                        smls:unit  unit:M3
+                                      ] ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT ((-4752.653975486779 -9620.44794082643 200.00000018994206), (-3452.6539754867795 -9305.44794082643 2700.000009726685))" ] ;
+        owl:sameAs                    inst:IfcWindow_6731 .
+
+inst:slab_c39bc8c5-ee04-426b-9242-23858206a5a8
+        a                             bot:Element , beo:Slab , beo:Slab-FLOOR ;
+        props:activerLeModeleAnalytique
+                [ rdf:value  false ] ;
+        props:batid                   "215408" ;
+        props:categorie               [ rdf:value
+                          "Sols" ] ;
+        props:categorie               [ rdf:value
+                          "Sols" ] ;
+        props:coefficientDabsorbance  [ rdf:value
+                          "0.1"^^xsd:double ] ;
+        props:couleurVueDetailFaible  [ rdf:value
+                          0 ] ;
+        props:decalageParRapportAuNiveau
+                [ rdf:value  "0."^^xsd:double ;
+                  smls:unit  unit:M
+                ] ;
+        props:elevationALaBase        [ rdf:value  "-100."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:elevationEnHaut         [ rdf:value  "200."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:epaisseur               [ rdf:value  "300."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:epaisseurParDefaut      [ rdf:value  "300."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:famille                 [ rdf:value
+                          "Sol: Sol générique - 300mm" ] ;
+        props:familleEtType           [ rdf:value
+                          "Sol: Sol générique - 300mm" ] ;
+        props:fonction                [ rdf:value
+                          "Intérieur" ] ;
+        props:globalIdIfcRoot         "33cyZ5xWH2Qv928uM21gMe" ;
+        props:iDDuType                [ rdf:value
+                          "Sol: Sol générique - 300mm" ] ;
+        props:isExternal              [ rdf:value     false ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_SlabCommon#p347cf000d20811e1800000215ad4efdf>
+                                      ] ;
+        props:lieAuVolume             [ rdf:value
+                          false ] ;
+        props:limiteDePiece           [ rdf:value
+                          true ] ;
+        props:loadBearing             [ rdf:value     false ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_SlabCommon#p3b0b6780d20811e1800000215ad4efdf>
+                                      ] ;
+        props:nameIfcRoot             "Sol:Sol générique - 300mm:215408" ;
+        props:niveau                  [ rdf:value
+                          "Niveau: Niveau 1" ] ;
+        props:nomDeLaFamille          [ rdf:value
+                          "Sol" ] ;
+        props:nomDuType               [ rdf:value
+                          "Sol générique - 300mm" ] ;
+        props:objectTypeIfcObject     "Sol:Sol générique - 300mm" ;
+        props:perimetre               [ rdf:value  "63598.8991928101"^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:phaseDeCreation         [ rdf:value
+                          "Nouvelle construction" ] ;
+        props:pitchAngle              [ rdf:value     "0."^^xsd:double ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_SlabCommon#p49598380d20811e1800000215ad4efdf> ;
+                                        smls:unit     unit:M
+                                      ] ;
+        props:reference               [ rdf:value     "Sol générique - 300mm" ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_SlabCommon#pfaabe980d20711e1800000215ad4efdf>
+                                      ] ;
+        props:rugosite                [ rdf:value
+                          1 ] ;
+        props:structure               [ rdf:value
+                          false ] ;
+        props:surface                 [ rdf:value  "234.656059320036"^^xsd:double ;
+                                        smls:unit  unit:M2
+                                      ] ;
+        props:type                    [ rdf:value
+                          "Sol: Sol générique - 300mm" ] ;
+        props:volume                  [ rdf:value  "70.3968177960109"^^xsd:double ;
+                                        smls:unit  unit:M3
+                                      ] ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT ((-13113.94921875 -9605.4482421875 -100.0), (314.61090087890625 8314.5517578125 200.0))" ] ;
+        owl:sameAs                    inst:IfcSlab_6380 .
+
+inst:window_c39bc8c5-ee04-426b-9242-23858206a4c2
+        a                             beo:Window , bot:Element ;
+        props:batid                   "215066" ;
+        props:categorie               [ rdf:value
+                          "Fenêtres" ] ;
+        props:encadrementInterieur    [ rdf:value
+                          false ] ;
+        props:famille                 [ rdf:value
+                          "2 Vantaux - Imposte haute: 1.40m x 2.40m" ] ;
+        props:familleEtType           [ rdf:value
+                          "2 Vantaux - Imposte haute: 1.40m x 2.40m" ] ;
+        props:globalIdIfcRoot         "33cyZ5xWH2Qv928uM21gJ2" ;
+        props:hauteurDeLappui         [ rdf:value  "50."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:hauteurSousLinteau      [ rdf:value  "2450."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:iDDuType                [ rdf:value
+                          "2 Vantaux - Imposte haute: 1.40m x 2.40m" ] ;
+        props:iDHote                  [ rdf:value
+                          "Mur de base: Générique  - 300 mm" ] ;
+        props:identifiant             [ rdf:value
+                          "7" ] ;
+        props:isExternal              [ rdf:value     true ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pcd1b6c00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:nameIfcRoot             "2 Vantaux - Imposte haute:1.40m x 2.40m:215066" ;
+        props:niveau                  [ rdf:value
+                          "Niveau: Niveau 1" ] ;
+        props:objectTypeIfcObject     "1.40m x 2.40m" ;
+        props:overallHeightIfcWindow  [ rdf:value  "2529.99999999999"^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:overallWidthIfcWindow   [ rdf:value  "1500."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:phaseDeCreation         [ rdf:value
+                          "Nouvelle construction" ] ;
+        props:reference               [ rdf:value     "1.40m x 2.40m" ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pa6f5cc00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:surface                 [ rdf:value  "6.12440475245866"^^xsd:double ;
+                                        smls:unit  unit:M2
+                                      ] ;
+        props:thermalTransmittance    [ rdf:value     "3.6886"^^xsd:double ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pd86e9780d21811e1800000215ad4efdf>
+                                      ] ;
+        props:type                    [ rdf:value
+                          "2 Vantaux - Imposte haute: 1.40m x 2.40m" ] ;
+        props:volume                  [ rdf:value  "0.0872604850487962"^^xsd:double ;
+                                        smls:unit  unit:M3
+                                      ] ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT ((14.610900878908069 2724.5515823364103 200.00000018994155), (329.61090087890807 4224.55158233641 2700.0000097266848))" ] ;
+        owl:sameAs                    inst:IfcWindow_6169 .
+
+inst:window_c39bc8c5-ee04-426b-9242-23858206a793
+        a                             beo:Window , bot:Element ;
+        props:batid                   "215883" ;
+        props:categorie               [ rdf:value
+                          "Fenêtres" ] ;
+        props:encadrementInterieur    [ rdf:value
+                          false ] ;
+        props:famille                 [ rdf:value
+                          "2 Vantaux - Imposte haute: 1.40m x 2.40m" ] ;
+        props:familleEtType           [ rdf:value
+                          "2 Vantaux - Imposte haute: 1.40m x 2.40m" ] ;
+        props:globalIdIfcRoot         "33cyZ5xWH2Qv928uM21gUJ" ;
+        props:hauteurDeLappui         [ rdf:value  "50."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:hauteurSousLinteau      [ rdf:value  "2450."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:iDDuType                [ rdf:value
+                          "2 Vantaux - Imposte haute: 1.40m x 2.40m" ] ;
+        props:iDHote                  [ rdf:value
+                          "Mur de base: Générique  - 300 mm" ] ;
+        props:identifiant             [ rdf:value
+                          "10" ] ;
+        props:isExternal              [ rdf:value     true ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pcd1b6c00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:nameIfcRoot             "2 Vantaux - Imposte haute:1.40m x 2.40m:215883" ;
+        props:niveau                  [ rdf:value
+                          "Niveau: Niveau 1" ] ;
+        props:objectTypeIfcObject     "1.40m x 2.40m" ;
+        props:overallHeightIfcWindow  [ rdf:value  "2529.99999999999"^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:overallWidthIfcWindow   [ rdf:value  "1500."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:phaseDeCreation         [ rdf:value
+                          "Nouvelle construction" ] ;
+        props:reference               [ rdf:value     "1.40m x 2.40m" ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pa6f5cc00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:surface                 [ rdf:value  "6.12440475245866"^^xsd:double ;
+                                        smls:unit  unit:M2
+                                      ] ;
+        props:thermalTransmittance    [ rdf:value     "3.6886"^^xsd:double ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pd86e9780d21811e1800000215ad4efdf>
+                                      ] ;
+        props:type                    [ rdf:value
+                          "2 Vantaux - Imposte haute: 1.40m x 2.40m" ] ;
+        props:volume                  [ rdf:value  "0.0872604850487962"^^xsd:double ;
+                                        smls:unit  unit:M3
+                                      ] ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT ((14.610900878908069 -5151.21315375614 200.00000018994155), (329.61090087890807 -3651.2131537561404 2700.0000097266848))" ] ;
+        owl:sameAs                    inst:IfcWindow_6539 .
+
+inst:window_c39bc8c5-ee04-426b-9242-23858206a01a
+        a                             bot:Element , beo:Window ;
+        props:batid                   "216258" ;
+        props:categorie               [ rdf:value
+                          "Fenêtres" ] ;
+        props:encadrementInterieur    [ rdf:value
+                          false ] ;
+        props:famille                 [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:familleEtType           [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:globalIdIfcRoot         "33cyZ5xWH2Qv928uM21g0Q" ;
+        props:hauteurDeLappui         [ rdf:value  "50."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:hauteurSousLinteau      [ rdf:value  "2450."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:iDDuType                [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:iDHote                  [ rdf:value
+                          "Mur de base: Générique  - 300 mm" ] ;
+        props:identifiant             [ rdf:value
+                          "14" ] ;
+        props:isExternal              [ rdf:value     true ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pcd1b6c00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:nameIfcRoot             "1 Vantail - Imposte haute:1.20m x 2.40m:216258" ;
+        props:niveau                  [ rdf:value
+                          "Niveau: Niveau 1" ] ;
+        props:objectTypeIfcObject     "1.20m x 2.40m" ;
+        props:overallHeightIfcWindow  [ rdf:value  "2529.99999999999"^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:overallWidthIfcWindow   [ rdf:value  "1300."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:phaseDeCreation         [ rdf:value
+                          "Nouvelle construction" ] ;
+        props:reference               [ rdf:value     "1.20m x 2.40m" ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pa6f5cc00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:surface                 [ rdf:value  "5.24827452765166"^^xsd:double ;
+                                        smls:unit  unit:M2
+                                      ] ;
+        props:thermalTransmittance    [ rdf:value     "5.5617"^^xsd:double ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pd86e9780d21811e1800000215ad4efdf>
+                                      ] ;
+        props:type                    [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:volume                  [ rdf:value  "0.0731671300418311"^^xsd:double ;
+                                        smls:unit  unit:M3
+                                      ] ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT ((-8681.3741874695 -9620.44794082643 200.00000018994206), (-7381.3741874695 -9305.44794082643 2700.000009726685))" ] ;
+        owl:sameAs                    inst:IfcWindow_6795 .
+
+inst:window_c39bc8c5-ee04-426b-9242-23858206a26d
+        a                             bot:Element , beo:Window ;
+        props:batid                   "216757" ;
+        props:categorie               [ rdf:value
+                          "Fenêtres" ] ;
+        props:encadrementInterieur    [ rdf:value
+                          false ] ;
+        props:famille                 [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:familleEtType           [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:globalIdIfcRoot         "33cyZ5xWH2Qv928uM21g9j" ;
+        props:hauteurDeLappui         [ rdf:value  "50."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:hauteurSousLinteau      [ rdf:value  "2450."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:iDDuType                [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:iDHote                  [ rdf:value
+                          "Mur de base: Générique  - 300 mm" ] ;
+        props:identifiant             [ rdf:value
+                          "20" ] ;
+        props:isExternal              [ rdf:value     true ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pcd1b6c00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:nameIfcRoot             "1 Vantail - Imposte haute:1.20m x 2.40m:216757" ;
+        props:niveau                  [ rdf:value
+                          "Niveau: Niveau 1" ] ;
+        props:objectTypeIfcObject     "1.20m x 2.40m" ;
+        props:overallHeightIfcWindow  [ rdf:value  "2529.99999999999"^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:overallWidthIfcWindow   [ rdf:value  "1300."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:phaseDeCreation         [ rdf:value
+                          "Nouvelle construction" ] ;
+        props:reference               [ rdf:value     "1.20m x 2.40m" ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pa6f5cc00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:surface                 [ rdf:value  "5.24827452765166"^^xsd:double ;
+                                        smls:unit  unit:M2
+                                      ] ;
+        props:thermalTransmittance    [ rdf:value     "5.5617"^^xsd:double ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pd86e9780d21811e1800000215ad4efdf>
+                                      ] ;
+        props:type                    [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:volume                  [ rdf:value  "0.0731671300418311"^^xsd:double ;
+                                        smls:unit  unit:M3
+                                      ] ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT ((-13128.9495849609 6299.06721115112 200.00000018994206), (-12813.9495849609 7599.06721115112 2700.000009726685))" ] ;
+        owl:sameAs                    inst:IfcWindow_8775 .
+
+inst:storey_bfaac590-1f58-4534-91f9-b854826d3fdf
+        a                         bot:Storey ;
+        props:aboveGround         [ rdf:value     <https://w3id.org/express#UNKNOWN> ;
+                                    rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_BuildingStoreyCommon#p89e3dd80d1c511e1800000215ad4efdf>
+                                  ] ;
+        props:baseDeLelevation    [ rdf:value  "Point de base du projet" ] ;
+        props:categorie           [ rdf:value  "Niveaux" ] ;
+        props:categorie           [ rdf:value  "Niveaux" ] ;
+        props:couleur             [ rdf:value  0 ] ;
+        props:elevation           [ rdf:value  "3300."^^xsd:double ;
+                                    smls:unit  unit:M
+                                  ] ;
+        props:elevationIfcBuildingStorey
+                [ rdf:value  "3300."^^xsd:double ;
+                  smls:unit  unit:M
+                ] ;
+        props:epaisseurDesLignes  [ rdf:value  "1" ] ;
+        props:etageDeBatiment     [ rdf:value  true ] ;
+        props:famille             [ rdf:value  "Niveau: Pointe 8 mm" ] ;
+        props:familleEtType       [ rdf:value  "Niveau: Pointe 8 mm" ] ;
+        props:globalIdIfcRoot     "2$giMG7rX5D97vk5I2RJ$V" ;
+        props:hauteurDeCalcul     [ rdf:value  "0."^^xsd:double ;
+                                    smls:unit  unit:M
+                                  ] ;
+        props:iDDuType            [ rdf:value  "Niveau: Pointe 8 mm" ] ;
+        props:longNameIfcSpatialStructureElement
+                "Niveau 2" ;
+        props:motifDesLignes      [ rdf:value  "Centre" ] ;
+        props:nameIfcRoot         "Niveau 2" ;
+        props:nom                 [ rdf:value  "Niveau 2" ] ;
+        props:nomDeLaFamille      [ rdf:value  "Niveau" ] ;
+        props:nomDuType           [ rdf:value  "Pointe 8 mm" ] ;
+        props:structure           [ rdf:value  false ] ;
+        props:symbole             [ rdf:value  "M_Marqueur de niveau - Cercle: M_Marqueur de niveau - Cercle" ] ;
+        props:type                [ rdf:value  "Niveau: Pointe 8 mm" ] ;
+        props:valeurParDefautDuSymboleALextremite
+                [ rdf:value  false ] ;
+        owl:sameAs                inst:IfcBuildingStorey_132 ;
+        bot:containsElement       inst:slab_c39bc8c5-ee04-426b-9242-23858206a238 .
+
+inst:window_c39bc8c5-ee04-426b-9242-23858206a4aa
+        a                             beo:Window , bot:Element ;
+        props:batid                   "215154" ;
+        props:categorie               [ rdf:value
+                          "Fenêtres" ] ;
+        props:encadrementInterieur    [ rdf:value
+                          false ] ;
+        props:famille                 [ rdf:value
+                          "2 Vantaux - Imposte haute: 1.40m x 2.40m" ] ;
+        props:familleEtType           [ rdf:value
+                          "2 Vantaux - Imposte haute: 1.40m x 2.40m" ] ;
+        props:globalIdIfcRoot         "33cyZ5xWH2Qv928uM21gIg" ;
+        props:hauteurDeLappui         [ rdf:value  "50."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:hauteurSousLinteau      [ rdf:value  "2450."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:iDDuType                [ rdf:value
+                          "2 Vantaux - Imposte haute: 1.40m x 2.40m" ] ;
+        props:iDHote                  [ rdf:value
+                          "Mur de base: Générique  - 300 mm" ] ;
+        props:identifiant             [ rdf:value
+                          "8" ] ;
+        props:isExternal              [ rdf:value     true ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pcd1b6c00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:nameIfcRoot             "2 Vantaux - Imposte haute:1.40m x 2.40m:215154" ;
+        props:niveau                  [ rdf:value
+                          "Niveau: Niveau 1" ] ;
+        props:objectTypeIfcObject     "1.40m x 2.40m" ;
+        props:overallHeightIfcWindow  [ rdf:value  "2529.99999999999"^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:overallWidthIfcWindow   [ rdf:value  "1500."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:phaseDeCreation         [ rdf:value
+                          "Nouvelle construction" ] ;
+        props:reference               [ rdf:value     "1.40m x 2.40m" ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pa6f5cc00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:surface                 [ rdf:value  "6.12440475245866"^^xsd:double ;
+                                        smls:unit  unit:M2
+                                      ] ;
+        props:thermalTransmittance    [ rdf:value     "3.6886"^^xsd:double ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pd86e9780d21811e1800000215ad4efdf>
+                                      ] ;
+        props:type                    [ rdf:value
+                          "2 Vantaux - Imposte haute: 1.40m x 2.40m" ] ;
+        props:volume                  [ rdf:value  "0.0872604850487962"^^xsd:double ;
+                                        smls:unit  unit:M3
+                                      ] ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT ((14.610900878908069 1124.5515823364103 200.00000018994155), (329.61090087890807 2624.5515823364103 2700.0000097266848))" ] ;
+        owl:sameAs                    inst:IfcWindow_6281 .
+
+inst:window_c39bc8c5-ee04-426b-9242-23858206a00f
+        a                             bot:Element , beo:Window ;
+        props:batid                   "216279" ;
+        props:categorie               [ rdf:value
+                          "Fenêtres" ] ;
+        props:encadrementInterieur    [ rdf:value
+                          false ] ;
+        props:famille                 [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:familleEtType           [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:globalIdIfcRoot         "33cyZ5xWH2Qv928uM21g0F" ;
+        props:hauteurDeLappui         [ rdf:value  "50."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:hauteurSousLinteau      [ rdf:value  "2450."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:iDDuType                [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:iDHote                  [ rdf:value
+                          "Mur de base: Générique  - 300 mm" ] ;
+        props:identifiant             [ rdf:value
+                          "15" ] ;
+        props:isExternal              [ rdf:value     true ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pcd1b6c00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:nameIfcRoot             "1 Vantail - Imposte haute:1.20m x 2.40m:216279" ;
+        props:niveau                  [ rdf:value
+                          "Niveau: Niveau 1" ] ;
+        props:objectTypeIfcObject     "1.20m x 2.40m" ;
+        props:overallHeightIfcWindow  [ rdf:value  "2529.99999999999"^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:overallWidthIfcWindow   [ rdf:value  "1300."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:phaseDeCreation         [ rdf:value
+                          "Nouvelle construction" ] ;
+        props:reference               [ rdf:value     "1.20m x 2.40m" ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pa6f5cc00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:surface                 [ rdf:value  "5.24827452765166"^^xsd:double ;
+                                        smls:unit  unit:M2
+                                      ] ;
+        props:thermalTransmittance    [ rdf:value     "5.5617"^^xsd:double ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pd86e9780d21811e1800000215ad4efdf>
+                                      ] ;
+        props:type                    [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:volume                  [ rdf:value  "0.0731671300418311"^^xsd:double ;
+                                        smls:unit  unit:M3
+                                      ] ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT ((-13128.9495849609 -8123.184537887581 200.00000018994206), (-12813.9495849609 -6823.184537887581 2700.000009726685))" ] ;
+        owl:sameAs                    inst:IfcWindow_7583 .
+
+inst:storey_bfaac590-1f58-4534-91f9-b854826d32f9
+        a                         bot:Storey ;
+        props:aboveGround         [ rdf:value     <https://w3id.org/express#UNKNOWN> ;
+                                    rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_BuildingStoreyCommon#p89e3dd80d1c511e1800000215ad4efdf>
+                                  ] ;
+        props:baseDeLelevation    [ rdf:value  "Point de base du projet" ] ;
+        props:categorie           [ rdf:value  "Niveaux" ] ;
+        props:categorie           [ rdf:value  "Niveaux" ] ;
+        props:couleur             [ rdf:value  0 ] ;
+        props:elevation           [ rdf:value  "200."^^xsd:double ;
+                                    smls:unit  unit:M
+                                  ] ;
+        props:elevationIfcBuildingStorey
+                [ rdf:value  "200."^^xsd:double ;
+                  smls:unit  unit:M
+                ] ;
+        props:epaisseurDesLignes  [ rdf:value  "1" ] ;
+        props:etageDeBatiment     [ rdf:value  true ] ;
+        props:famille             [ rdf:value  "Niveau: Pointe 8 mm" ] ;
+        props:familleEtType       [ rdf:value  "Niveau: Pointe 8 mm" ] ;
+        props:globalIdIfcRoot     "2$giMG7rX5D97vk5I2RJBv" ;
+        props:hauteurDeCalcul     [ rdf:value  "0."^^xsd:double ;
+                                    smls:unit  unit:M
+                                  ] ;
+        props:iDDuType            [ rdf:value  "Niveau: Pointe 8 mm" ] ;
+        props:longNameIfcSpatialStructureElement
+                "Niveau 1" ;
+        props:motifDesLignes      [ rdf:value  "Centre" ] ;
+        props:nameIfcRoot         "Niveau 1" ;
+        props:nom                 [ rdf:value  "Niveau 1" ] ;
+        props:nomDeLaFamille      [ rdf:value  "Niveau" ] ;
+        props:nomDuType           [ rdf:value  "Pointe 8 mm" ] ;
+        props:structure           [ rdf:value  false ] ;
+        props:symbole             [ rdf:value  "M_Marqueur de niveau - Cercle: M_Marqueur de niveau - Cercle" ] ;
+        props:type                [ rdf:value  "Niveau: Pointe 8 mm" ] ;
+        props:valeurParDefautDuSymboleALextremite
+                [ rdf:value  false ] ;
+        owl:sameAs                inst:IfcBuildingStorey_126 ;
+        bot:containsElement       inst:window_c39bc8c5-ee04-426b-9242-23858206a742 , inst:window_c39bc8c5-ee04-426b-9242-23858206a156 , inst:window_c39bc8c5-ee04-426b-9242-23858206a4aa , inst:window_c39bc8c5-ee04-426b-9242-23858206a2ba , inst:window_c39bc8c5-ee04-426b-9242-23858206a00f , inst:window_c39bc8c5-ee04-426b-9242-23858206a0f6 , inst:window_c39bc8c5-ee04-426b-9242-23858206a138 , inst:window_c39bc8c5-ee04-426b-9242-23858206a05b , inst:window_c39bc8c5-ee04-426b-9242-23858206a24c , inst:window_c39bc8c5-ee04-426b-9242-23858206a4c2 , inst:window_c39bc8c5-ee04-426b-9242-23858206a793 , inst:window_c39bc8c5-ee04-426b-9242-23858206a01a , inst:window_c39bc8c5-ee04-426b-9242-23858206d191 , inst:window_c39bc8c5-ee04-426b-9242-23858206a26d , inst:slab_c39bc8c5-ee04-426b-9242-23858206a5a8 , inst:window_c39bc8c5-ee04-426b-9242-23858206a67f .
+
+inst:window_c39bc8c5-ee04-426b-9242-23858206a0f6
+        a                             bot:Element , beo:Window ;
+        props:batid                   "216110" ;
+        props:categorie               [ rdf:value
+                          "Fenêtres" ] ;
+        props:encadrementInterieur    [ rdf:value
+                          false ] ;
+        props:famille                 [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:familleEtType           [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:globalIdIfcRoot         "33cyZ5xWH2Qv928uM21g3s" ;
+        props:hauteurDeLappui         [ rdf:value  "50."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:hauteurSousLinteau      [ rdf:value  "2450."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:iDDuType                [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:iDHote                  [ rdf:value
+                          "Mur de base: Générique  - 300 mm" ] ;
+        props:identifiant             [ rdf:value
+                          "12" ] ;
+        props:isExternal              [ rdf:value     true ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pcd1b6c00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:nameIfcRoot             "1 Vantail - Imposte haute:1.20m x 2.40m:216110" ;
+        props:niveau                  [ rdf:value
+                          "Niveau: Niveau 1" ] ;
+        props:objectTypeIfcObject     "1.20m x 2.40m" ;
+        props:overallHeightIfcWindow  [ rdf:value  "2529.99999999999"^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:overallWidthIfcWindow   [ rdf:value  "1300."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:phaseDeCreation         [ rdf:value
+                          "Nouvelle construction" ] ;
+        props:reference               [ rdf:value     "1.20m x 2.40m" ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pa6f5cc00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:surface                 [ rdf:value  "5.24827452765166"^^xsd:double ;
+                                        smls:unit  unit:M2
+                                      ] ;
+        props:thermalTransmittance    [ rdf:value     "5.5617"^^xsd:double ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pd86e9780d21811e1800000215ad4efdf>
+                                      ] ;
+        props:type                    [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:volume                  [ rdf:value  "0.0731671300418311"^^xsd:double ;
+                                        smls:unit  unit:M3
+                                      ] ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT ((14.610900878908069 -8027.947807588038 200.00000018994206), (329.61090087890807 -6727.947807588038 2700.000009726685))" ] ;
+        owl:sameAs                    inst:IfcWindow_6667 .
+
+inst:site_bfaac590-1f58-4534-91f9-b8547d92fe04
+        a                          bot:Site ;
+        props:addInTSData          [ rdf:value  "<?xml version\"1.0\" encoding\"utf-16\"?><TimeStampData xmlns:xsd\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi\"http://www.w3.org/2001/XMLSchema-instance\">  <LastTimeStamp>2016-10-26T13:51:13.9030165+02:00</LastTimeStamp>  <LastUser>dhurtubise@rpbw.com</LastUser></TimeStampData>" ] ;
+        props:adresseDuProjet      [ rdf:value  "## RueVille, Code postal" ] ;
+        props:categorie            [ rdf:value  "Informations sur le projet" ] ;
+        props:dateDeFinDuProjet    [ rdf:value  "Date de fin" ] ;
+        props:globalIdIfcRoot      "2$giMG7rX5D97vk5Hzalu4" ;
+        props:nameIfcRoot          "Default" ;
+        props:nomDuClient          [ rdf:value  "Propriétaire" ] ;
+        props:numeroDeProjet       [ rdf:value  "Numéro du projet" ] ;
+        props:refElevationIfcSite  [ rdf:value  "0."^^xsd:double ;
+                                     smls:unit  unit:M
+                                   ] ;
+        owl:sameAs                 inst:IfcSite_8922 ;
+        bot:hasBuilding            inst:building_bfaac590-1f58-4534-91f9-b8547d92fe07 .
+
+inst:window_c39bc8c5-ee04-426b-9242-23858206a67f
+        a                             bot:Element , beo:Window ;
+        props:batid                   "215719" ;
+        props:categorie               [ rdf:value
+                          "Fenêtres" ] ;
+        props:encadrementInterieur    [ rdf:value
+                          false ] ;
+        props:famille                 [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:familleEtType           [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:globalIdIfcRoot         "33cyZ5xWH2Qv928uM21gP$" ;
+        props:hauteurDeLappui         [ rdf:value  "50."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:hauteurSousLinteau      [ rdf:value  "2450."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:iDDuType                [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:iDHote                  [ rdf:value
+                          "Mur de base: Générique  - 300 mm" ] ;
+        props:identifiant             [ rdf:value
+                          "9" ] ;
+        props:isExternal              [ rdf:value     true ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pcd1b6c00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:nameIfcRoot             "1 Vantail - Imposte haute:1.20m x 2.40m:215719" ;
+        props:niveau                  [ rdf:value
+                          "Niveau: Niveau 1" ] ;
+        props:objectTypeIfcObject     "1.20m x 2.40m" ;
+        props:overallHeightIfcWindow  [ rdf:value  "2529.99999999999"^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:overallWidthIfcWindow   [ rdf:value  "1300."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:phaseDeCreation         [ rdf:value
+                          "Nouvelle construction" ] ;
+        props:reference               [ rdf:value     "1.20m x 2.40m" ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pa6f5cc00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:surface                 [ rdf:value  "5.24827452765166"^^xsd:double ;
+                                        smls:unit  unit:M2
+                                      ] ;
+        props:thermalTransmittance    [ rdf:value     "5.5617"^^xsd:double ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pd86e9780d21811e1800000215ad4efdf>
+                                      ] ;
+        props:type                    [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:volume                  [ rdf:value  "0.0731671300418311"^^xsd:double ;
+                                        smls:unit  unit:M3
+                                      ] ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT ((14.610900878908069 -1650.0000000000086 200.00000018994206), (329.61090087890807 -350.0000000000085 2700.000009726685))" ] ;
+        owl:sameAs                    inst:IfcWindow_6475 .
+
+inst:window_c39bc8c5-ee04-426b-9242-23858206a156
+        a                             beo:Window , bot:Element ;
+        props:batid                   "216462" ;
+        props:categorie               [ rdf:value
+                          "Fenêtres" ] ;
+        props:encadrementInterieur    [ rdf:value
+                          false ] ;
+        props:famille                 [ rdf:value
+                          "2 Vantaux - Imposte haute: 1.40m x 2.40m" ] ;
+        props:familleEtType           [ rdf:value
+                          "2 Vantaux - Imposte haute: 1.40m x 2.40m" ] ;
+        props:globalIdIfcRoot         "33cyZ5xWH2Qv928uM21g5M" ;
+        props:hauteurDeLappui         [ rdf:value  "50."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:hauteurSousLinteau      [ rdf:value  "2450."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:iDDuType                [ rdf:value
+                          "2 Vantaux - Imposte haute: 1.40m x 2.40m" ] ;
+        props:iDHote                  [ rdf:value
+                          "Mur de base: Générique  - 300 mm" ] ;
+        props:identifiant             [ rdf:value
+                          "16" ] ;
+        props:isExternal              [ rdf:value     true ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pcd1b6c00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:nameIfcRoot             "2 Vantaux - Imposte haute:1.40m x 2.40m:216462" ;
+        props:niveau                  [ rdf:value
+                          "Niveau: Niveau 1" ] ;
+        props:objectTypeIfcObject     "1.40m x 2.40m" ;
+        props:overallHeightIfcWindow  [ rdf:value  "2529.99999999999"^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:overallWidthIfcWindow   [ rdf:value  "1500."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:phaseDeCreation         [ rdf:value
+                          "Nouvelle construction" ] ;
+        props:reference               [ rdf:value     "1.40m x 2.40m" ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pa6f5cc00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:surface                 [ rdf:value  "6.12440475245866"^^xsd:double ;
+                                        smls:unit  unit:M2
+                                      ] ;
+        props:thermalTransmittance    [ rdf:value     "3.6886"^^xsd:double ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pd86e9780d21811e1800000215ad4efdf>
+                                      ] ;
+        props:type                    [ rdf:value
+                          "2 Vantaux - Imposte haute: 1.40m x 2.40m" ] ;
+        props:volume                  [ rdf:value  "0.0872604850487962"^^xsd:double ;
+                                        smls:unit  unit:M3
+                                      ] ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT ((-13128.9495849609 -6623.18453788758 200.00000018994155), (-12813.9495849609 -5123.18453788758 2700.0000097266848))" ] ;
+        owl:sameAs                    inst:IfcWindow_8518 .
+
+inst:window_c39bc8c5-ee04-426b-9242-23858206a138
+        a                             bot:Element , beo:Window ;
+        props:batid                   "216544" ;
+        props:categorie               [ rdf:value
+                          "Fenêtres" ] ;
+        props:encadrementInterieur    [ rdf:value
+                          false ] ;
+        props:famille                 [ rdf:value
+                          "2 Vantaux - Imposte haute: 1.40m x 2.40m" ] ;
+        props:familleEtType           [ rdf:value
+                          "2 Vantaux - Imposte haute: 1.40m x 2.40m" ] ;
+        props:globalIdIfcRoot         "33cyZ5xWH2Qv928uM21g4u" ;
+        props:hauteurDeLappui         [ rdf:value  "50."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:hauteurSousLinteau      [ rdf:value  "2450."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:iDDuType                [ rdf:value
+                          "2 Vantaux - Imposte haute: 1.40m x 2.40m" ] ;
+        props:iDHote                  [ rdf:value
+                          "Mur de base: Générique  - 300 mm" ] ;
+        props:identifiant             [ rdf:value
+                          "17" ] ;
+        props:isExternal              [ rdf:value     true ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pcd1b6c00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:nameIfcRoot             "2 Vantaux - Imposte haute:1.40m x 2.40m:216544" ;
+        props:niveau                  [ rdf:value
+                          "Niveau: Niveau 1" ] ;
+        props:objectTypeIfcObject     "1.40m x 2.40m" ;
+        props:overallHeightIfcWindow  [ rdf:value  "2529.99999999999"^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:overallWidthIfcWindow   [ rdf:value  "1500."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:phaseDeCreation         [ rdf:value
+                          "Nouvelle construction" ] ;
+        props:reference               [ rdf:value     "1.40m x 2.40m" ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pa6f5cc00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:surface                 [ rdf:value  "6.12440475245866"^^xsd:double ;
+                                        smls:unit  unit:M2
+                                      ] ;
+        props:thermalTransmittance    [ rdf:value     "3.6886"^^xsd:double ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pd86e9780d21811e1800000215ad4efdf>
+                                      ] ;
+        props:type                    [ rdf:value
+                          "2 Vantaux - Imposte haute: 1.40m x 2.40m" ] ;
+        props:volume                  [ rdf:value  "0.0872604850487962"^^xsd:double ;
+                                        smls:unit  unit:M3
+                                      ] ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT ((-13128.9495849609 -5142.739522457081 200.00000018994155), (-12813.9495849609 -3642.739522457081 2700.0000097266848))" ] ;
+        owl:sameAs                    inst:IfcWindow_8583 .
+
+inst:window_c39bc8c5-ee04-426b-9242-23858206a742
+        a                             beo:Window , bot:Element ;
+        props:batid                   "215962" ;
+        props:categorie               [ rdf:value
+                          "Fenêtres" ] ;
+        props:encadrementInterieur    [ rdf:value
+                          false ] ;
+        props:famille                 [ rdf:value
+                          "2 Vantaux - Imposte haute: 1.40m x 2.40m" ] ;
+        props:familleEtType           [ rdf:value
+                          "2 Vantaux - Imposte haute: 1.40m x 2.40m" ] ;
+        props:globalIdIfcRoot         "33cyZ5xWH2Qv928uM21gT2" ;
+        props:hauteurDeLappui         [ rdf:value  "50."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:hauteurSousLinteau      [ rdf:value  "2450."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:iDDuType                [ rdf:value
+                          "2 Vantaux - Imposte haute: 1.40m x 2.40m" ] ;
+        props:iDHote                  [ rdf:value
+                          "Mur de base: Générique  - 300 mm" ] ;
+        props:identifiant             [ rdf:value
+                          "11" ] ;
+        props:isExternal              [ rdf:value     true ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pcd1b6c00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:nameIfcRoot             "2 Vantaux - Imposte haute:1.40m x 2.40m:215962" ;
+        props:niveau                  [ rdf:value
+                          "Niveau: Niveau 1" ] ;
+        props:objectTypeIfcObject     "1.40m x 2.40m" ;
+        props:overallHeightIfcWindow  [ rdf:value  "2529.99999999999"^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:overallWidthIfcWindow   [ rdf:value  "1500."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:phaseDeCreation         [ rdf:value
+                          "Nouvelle construction" ] ;
+        props:reference               [ rdf:value     "1.40m x 2.40m" ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pa6f5cc00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:surface                 [ rdf:value  "6.12440475245866"^^xsd:double ;
+                                        smls:unit  unit:M2
+                                      ] ;
+        props:thermalTransmittance    [ rdf:value     "3.6886"^^xsd:double ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pd86e9780d21811e1800000215ad4efdf>
+                                      ] ;
+        props:type                    [ rdf:value
+                          "2 Vantaux - Imposte haute: 1.40m x 2.40m" ] ;
+        props:volume                  [ rdf:value  "0.0872604850487962"^^xsd:double ;
+                                        smls:unit  unit:M3
+                                      ] ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT ((14.610900878908069 -6627.94780758804 200.00000018994155), (329.61090087890807 -5127.94780758804 2700.0000097266848))" ] ;
+        owl:sameAs                    inst:IfcWindow_6603 .
+
+inst:window_c39bc8c5-ee04-426b-9242-23858206a24c
+        a                             bot:Element , beo:Window ;
+        props:batid                   "216724" ;
+        props:categorie               [ rdf:value
+                          "Fenêtres" ] ;
+        props:encadrementInterieur    [ rdf:value
+                          false ] ;
+        props:famille                 [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:familleEtType           [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:globalIdIfcRoot         "33cyZ5xWH2Qv928uM21g9C" ;
+        props:hauteurDeLappui         [ rdf:value  "50."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:hauteurSousLinteau      [ rdf:value  "2450."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:iDDuType                [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:iDHote                  [ rdf:value
+                          "Mur de base: Générique  - 300 mm" ] ;
+        props:identifiant             [ rdf:value
+                          "19" ] ;
+        props:isExternal              [ rdf:value     true ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pcd1b6c00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:nameIfcRoot             "1 Vantail - Imposte haute:1.20m x 2.40m:216724" ;
+        props:niveau                  [ rdf:value
+                          "Niveau: Niveau 1" ] ;
+        props:objectTypeIfcObject     "1.20m x 2.40m" ;
+        props:overallHeightIfcWindow  [ rdf:value  "2529.99999999999"^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:overallWidthIfcWindow   [ rdf:value  "1300."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:phaseDeCreation         [ rdf:value
+                          "Nouvelle construction" ] ;
+        props:reference               [ rdf:value     "1.20m x 2.40m" ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pa6f5cc00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:surface                 [ rdf:value  "5.24827452765166"^^xsd:double ;
+                                        smls:unit  unit:M2
+                                      ] ;
+        props:thermalTransmittance    [ rdf:value     "5.5617"^^xsd:double ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pd86e9780d21811e1800000215ad4efdf>
+                                      ] ;
+        props:type                    [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:volume                  [ rdf:value  "0.0731671300418311"^^xsd:double ;
+                                        smls:unit  unit:M3
+                                      ] ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT ((-13128.9495849609 2250.0 200.00000018994206), (-12813.9495849609 3550.0 2700.000009726685))" ] ;
+        owl:sameAs                    inst:IfcWindow_8711 .
+
+inst:window_c39bc8c5-ee04-426b-9242-23858206d191
+        a                             bot:Element , beo:Window ;
+        props:batid                   "212297" ;
+        props:categorie               [ rdf:value
+                          "Fenêtres" ] ;
+        props:encadrementInterieur    [ rdf:value
+                          false ] ;
+        props:famille                 [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:familleEtType           [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:globalIdIfcRoot         "33cyZ5xWH2Qv928uM21j6H" ;
+        props:hauteurDeLappui         [ rdf:value  "50."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:hauteurSousLinteau      [ rdf:value  "2450."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:iDDuType                [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:iDHote                  [ rdf:value
+                          "Mur de base: Générique  - 300 mm" ] ;
+        props:identifiant             [ rdf:value
+                          "6" ] ;
+        props:isExternal              [ rdf:value     true ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pcd1b6c00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:nameIfcRoot             "1 Vantail - Imposte haute:1.20m x 2.40m:212297" ;
+        props:niveau                  [ rdf:value
+                          "Niveau: Niveau 1" ] ;
+        props:objectTypeIfcObject     "1.20m x 2.40m" ;
+        props:overallHeightIfcWindow  [ rdf:value  "2529.99999999999"^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:overallWidthIfcWindow   [ rdf:value  "1300."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:phaseDeCreation         [ rdf:value
+                          "Nouvelle construction" ] ;
+        props:reference               [ rdf:value     "1.20m x 2.40m" ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pa6f5cc00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:surface                 [ rdf:value  "5.24827452765166"^^xsd:double ;
+                                        smls:unit  unit:M2
+                                      ] ;
+        props:thermalTransmittance    [ rdf:value     "5.5617"^^xsd:double ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pd86e9780d21811e1800000215ad4efdf>
+                                      ] ;
+        props:type                    [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:volume                  [ rdf:value  "0.0731671300418311"^^xsd:double ;
+                                        smls:unit  unit:M3
+                                      ] ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT ((14.610900878908069 5424.55158233641 200.00000018994206), (329.61090087890807 6724.55158233641 2700.000009726685))" ] ;
+        owl:sameAs                    inst:IfcWindow_5178 .
+
+inst:slab_c39bc8c5-ee04-426b-9242-23858206a238
+        a                             beo:Slab-FLOOR , beo:Slab , bot:Element ;
+        props:activerLeModeleAnalytique
+                [ rdf:value  false ] ;
+        props:batid                   "216800" ;
+        props:categorie               [ rdf:value
+                          "Sols" ] ;
+        props:categorie               [ rdf:value
+                          "Sols" ] ;
+        props:coefficientDabsorbance  [ rdf:value
+                          "0.1"^^xsd:double ] ;
+        props:couleurVueDetailFaible  [ rdf:value
+                          0 ] ;
+        props:decalageParRapportAuNiveau
+                [ rdf:value  "0."^^xsd:double ;
+                  smls:unit  unit:M
+                ] ;
+        props:elevationALaBase        [ rdf:value  "3000."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:elevationEnHaut         [ rdf:value  "3300."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:epaisseur               [ rdf:value  "300."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:epaisseurParDefaut      [ rdf:value  "300."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:famille                 [ rdf:value
+                          "Sol: Sol générique - 300mm" ] ;
+        props:familleEtType           [ rdf:value
+                          "Sol: Sol générique - 300mm" ] ;
+        props:fonction                [ rdf:value
+                          "Intérieur" ] ;
+        props:globalIdIfcRoot         "33cyZ5xWH2Qv928uM21g8u" ;
+        props:iDDuType                [ rdf:value
+                          "Sol: Sol générique - 300mm" ] ;
+        props:isExternal              [ rdf:value     false ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_SlabCommon#p347cf000d20811e1800000215ad4efdf>
+                                      ] ;
+        props:lieAuVolume             [ rdf:value
+                          false ] ;
+        props:limiteDePiece           [ rdf:value
+                          true ] ;
+        props:loadBearing             [ rdf:value     false ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_SlabCommon#p3b0b6780d20811e1800000215ad4efdf>
+                                      ] ;
+        props:nameIfcRoot             "Sol:Sol générique - 300mm:216800" ;
+        props:niveau                  [ rdf:value
+                          "Niveau: Niveau 2" ] ;
+        props:nomDeLaFamille          [ rdf:value
+                          "Sol" ] ;
+        props:nomDuType               [ rdf:value
+                          "Sol générique - 300mm" ] ;
+        props:objectTypeIfcObject     "Sol:Sol générique - 300mm" ;
+        props:perimetre               [ rdf:value  "63598.8991928101"^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:phaseDeCreation         [ rdf:value
+                          "Nouvelle construction" ] ;
+        props:pitchAngle              [ rdf:value     "0."^^xsd:double ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_SlabCommon#p49598380d20811e1800000215ad4efdf> ;
+                                        smls:unit     unit:M
+                                      ] ;
+        props:reference               [ rdf:value     "Sol générique - 300mm" ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_SlabCommon#pfaabe980d20711e1800000215ad4efdf>
+                                      ] ;
+        props:rugosite                [ rdf:value
+                          1 ] ;
+        props:structure               [ rdf:value
+                          false ] ;
+        props:surface                 [ rdf:value  "234.656059320037"^^xsd:double ;
+                                        smls:unit  unit:M2
+                                      ] ;
+        props:type                    [ rdf:value
+                          "Sol: Sol générique - 300mm" ] ;
+        props:volume                  [ rdf:value  "70.396817796011"^^xsd:double ;
+                                        smls:unit  unit:M3
+                                      ] ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT ((-13113.94921875 -9605.4482421875 3000.0), (314.61090087890625 8314.5517578125 3300.0))" ] ;
+        owl:sameAs                    inst:IfcSlab_8869 .
+
+inst:building_bfaac590-1f58-4534-91f9-b8547d92fe07
+        a                        bot:Building ;
+        props:addInTSData        [ rdf:value  "<?xml version\"1.0\" encoding\"utf-16\"?><TimeStampData xmlns:xsd\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi\"http://www.w3.org/2001/XMLSchema-instance\">  <LastTimeStamp>2016-10-26T13:51:13.9030165+02:00</LastTimeStamp>  <LastUser>dhurtubise@rpbw.com</LastUser></TimeStampData>" ] ;
+        props:adresseDuProjet    [ rdf:value  "## RueVille, Code postal" ] ;
+        props:categorie          [ rdf:value  "Informations sur le projet" ] ;
+        props:dateDeFinDuProjet  [ rdf:value  "Date de fin" ] ;
+        props:globalIdIfcRoot    "2$giMG7rX5D97vk5Hzalu7" ;
+        props:nomDuClient        [ rdf:value  "Propriétaire" ] ;
+        props:numberOfStoreys    [ rdf:value     2 ;
+                                   rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_BuildingCommon#p1d68de80d1c511e1800000215ad4efdf>
+                                 ] ;
+        props:numeroDeProjet     [ rdf:value  "Numéro du projet" ] ;
+        owl:sameAs               inst:IfcBuilding_115 ;
+        bot:hasStorey            inst:storey_bfaac590-1f58-4534-91f9-b854826d32f9 , inst:storey_bfaac590-1f58-4534-91f9-b854826d3fdf .
+
+inst:window_c39bc8c5-ee04-426b-9242-23858206a2ba
+        a                             bot:Element , beo:Window ;
+        props:batid                   "216674" ;
+        props:categorie               [ rdf:value
+                          "Fenêtres" ] ;
+        props:encadrementInterieur    [ rdf:value
+                          false ] ;
+        props:famille                 [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:familleEtType           [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:globalIdIfcRoot         "33cyZ5xWH2Qv928uM21gAw" ;
+        props:hauteurDeLappui         [ rdf:value  "50."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:hauteurSousLinteau      [ rdf:value  "2450."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:iDDuType                [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:iDHote                  [ rdf:value
+                          "Mur de base: Générique  - 300 mm" ] ;
+        props:identifiant             [ rdf:value
+                          "18" ] ;
+        props:isExternal              [ rdf:value     true ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pcd1b6c00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:nameIfcRoot             "1 Vantail - Imposte haute:1.20m x 2.40m:216674" ;
+        props:niveau                  [ rdf:value
+                          "Niveau: Niveau 1" ] ;
+        props:objectTypeIfcObject     "1.20m x 2.40m" ;
+        props:overallHeightIfcWindow  [ rdf:value  "2529.99999999999"^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:overallWidthIfcWindow   [ rdf:value  "1300."^^xsd:double ;
+                                        smls:unit  unit:M
+                                      ] ;
+        props:phaseDeCreation         [ rdf:value
+                          "Nouvelle construction" ] ;
+        props:reference               [ rdf:value     "1.20m x 2.40m" ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pa6f5cc00d21811e1800000215ad4efdf>
+                                      ] ;
+        props:surface                 [ rdf:value  "5.24827452765166"^^xsd:double ;
+                                        smls:unit  unit:M2
+                                      ] ;
+        props:thermalTransmittance    [ rdf:value     "5.5617"^^xsd:double ;
+                                        rdfs:seeAlso  <https://www.linkedbuildingdata.net/IFC4-PSD/Pset_WindowCommon#pd86e9780d21811e1800000215ad4efdf>
+                                      ] ;
+        props:type                    [ rdf:value
+                          "1 Vantail - Imposte haute: 1.20m x 2.40m" ] ;
+        props:volume                  [ rdf:value  "0.0731671300418311"^^xsd:double ;
+                                        smls:unit  unit:M3
+                                      ] ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT ((-13128.9495849609 750.0 200.00000018994206), (-12813.9495849609 2050.0 2700.000009726685))" ] ;
+        owl:sameAs                    inst:IfcWindow_8647 .
