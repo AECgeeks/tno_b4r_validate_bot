@@ -6,6 +6,7 @@ Written by Thomas Krijnen <thomas@aecgeeks.com>
 
 import os
 import rdflib
+import platform
 import tempfile
 import subprocess
 
@@ -15,6 +16,21 @@ from rdflib import Namespace
 SHACL = Namespace("http://www.w3.org/ns/shacl#")
 PROPS = Namespace("http://lbd.arch.rwth-aachen.de/props#")
 BOT = Namespace('https://w3id.org/bot#')
+
+VALIDATE_PATH = "shaclvalidate.sh"
+if platform.system() == 'Windows':
+    SHACL_PATH = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'shacl-1.3.2')
+    VALIDATE_PATH = os.path.join(SHACL_PATH, 'bin', 'shaclvalidate.bat')
+    
+    if not os.path.exists(VALIDATE_PATH):
+        raise RuntimeError(
+            "Unable to find shaclvalidate \n"
+            "Download shacl from https://repo1.maven.org/maven2/org/topbraid/shacl/1.3.2/shacl-1.3.2-bin.zip\n"
+            "Extract and place in the this folder: \n" + 
+            os.path.abspath(os.path.dirname(__file__))            
+        )
+        
+    os.environ['SHACL_HOME'] = SHACL_PATH
 
 def join(graphs):
     """
@@ -44,7 +60,7 @@ def run(data, *shapes):
         shapes = shapes[0]
     
     proc = subprocess.Popen(
-        ["shaclvalidate.sh", "-datafile", data, "-shapesfile", shapes],
+        [VALIDATE_PATH, "-datafile", data, "-shapesfile", shapes],
         stdout=subprocess.PIPE)
     stdout, stderr = proc.communicate()
     stdout = stdout.decode('ascii')

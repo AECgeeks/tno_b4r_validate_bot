@@ -5,6 +5,7 @@ Written by Thomas Krijnen <thomas@aecgeeks.com>
 """
 
 import os
+import sys
 import base64
 import logging
 # logging.basicConfig(level=logging.DEBUG)
@@ -13,6 +14,11 @@ import requests
 import json
 
 import pprint as pp
+
+PORT=80
+try:
+    PORT = int(sys.argv[1])
+except: pass
 
 class P(pp.PrettyPrinter):
   def _format(self, object, *args, **kwargs):
@@ -49,7 +55,7 @@ def invoke_bimbot(url, files):
             "identifier": nm.split('.')[0],
             "type": "RDF",
             "schema": "B4R",
-            "location": "data:text/turtle;base64," + base64.b64encode(f.read()).decode('ascii')
+            "location": "data:text/turtle;base64," + base64.b64encode(f.read().encode('utf-8')).decode('ascii')
         }
         
     return request(url, {
@@ -62,7 +68,7 @@ def invoke_bimbot(url, files):
     })
     
 if __name__ == "__main__":
-    resp = invoke_bimbot("http://localhost", [open('BIM4Ren_DUNANT_cleaned_IFC2x3.ifc_LBD.ttl', 'rb')])
+    resp = invoke_bimbot("http://localhost:%d" % PORT, [open('BIM4Ren_DUNANT_cleaned_IFC2x3.ifc_LBD.ttl', 'r', encoding='utf-8')])
     J = json.loads(resp.content)
     import io, zipfile
     zfb = io.BytesIO(base64.b64decode(J['location'].split(',')[1].encode('ascii')))

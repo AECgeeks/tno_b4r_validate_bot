@@ -1,7 +1,7 @@
 SHACL-based validation BIM Bot
 ==============================
 
-Thomas Krijnen thomas@aecgeeks.com
+Thomas Krijnen <thomas@aecgeeks.com>
 
 An implementation of a BIM-Bot that accepts Linked-data serialized Bim4ren models, applies several [SHACL shapes](https://github.com/sbalot/BIM4Ren_SHACLDB) and returns output as a BCF. Can be ran as a BIM Bot or
 HTML web-interface.
@@ -60,8 +60,26 @@ HTML web-interface.
 
 ## Development
 
-Use `python main.py` to spin op a development server with automatic code reloading.
+Install the requirements.
+
+    python -m pip install -r requirements.txt
+    
+Download and unzip shacl into the root directory of this repository
+
+    https://repo1.maven.org/maven2/org/topbraid/shacl/1.3.2/shacl-1.3.2-bin.zip
+
+Spin op a development server with automatic code reloading.
+
+    python main.py
+    
+When the server is running invoke with example usage
+
+    python invoke.py 5000
+    
+Or open your webbrowser with
+
+    localhost:5000
 
 ## Production
 
-The application can be deployed as a Docker file that runs supervisord to monitor the gunicorn web server and a process that polls for new changes in the repository of validation shapes. Building the Docker file and running with the appropriate port binding can be accomplished by running run.sh
+The application can be deployed as a Docker file that runs supervisord to monitor the gunicorn web server and a process that polls for new changes in the repository of validation shapes. Building the Docker file and running with the appropriate port binding can be accomplished by running `run.sh`

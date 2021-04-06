@@ -148,10 +148,10 @@ def entry_point():
             b64_data = payload['inputs'][0]['location'].split(',')[1]
             contents = base64.b64decode(b64_data).decode('utf-8')
 
-            with os.fdopen(handle, 'w') as f:
+            with os.fdopen(handle, 'w', encoding='utf-8') as f:
                 f.write(contents)
             
-        R = list(run_validate.run(filename, *glob.glob("shapes/Shapes/*.ttl")))
+        R = list(run_validate.run(filename, *glob.glob(os.path.join("shapes", "Shapes", "*.ttl"))))
         project_guid, issues = R[0], R[1:]
         
         result = tabulate(issues, headers=["GlobalId", "Message"], tablefmt="html")
@@ -167,7 +167,7 @@ def entry_point():
         url = None
     
     if use_html:
-        shacl_content = '\n\n\n'.join(open(fn).read() for fn in glob.glob("shapes/Shapes/*.ttl"))
+        shacl_content = '\n\n\n'.join(open(fn).read() for fn in glob.glob(os.path.join("shapes", "Shapes", "*.ttl")))
         return render_template(
             'index.html', 
             shacl_content=shacl_content,
