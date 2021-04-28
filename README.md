@@ -6,6 +6,14 @@ Thomas Krijnen <thomas@aecgeeks.com>
 An implementation of a BIM-Bot that accepts Linked-data serialized Bim4ren models, applies several [SHACL shapes](https://github.com/sbalot/BIM4Ren_SHACLDB) and returns output as a BCF. Can be ran as a BIM Bot or
 HTML web-interface.
 
+The repository of SHACL shapes is a git submodule in this repository. So, either
+
+    git clone --recursive
+    
+or do after cloning
+
+    git submodule init && git submodule update
+
 ## Overview
 
 * `invoke.py` invokes the running BIM bot and interactively shows the information exchange
